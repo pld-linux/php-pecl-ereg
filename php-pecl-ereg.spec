@@ -7,6 +7,7 @@
 Summary:	%{modname} -
 Summary(pl.UTF-8):	%{modname} -
 Name:		%{php_name}-pecl-%{modname}
+# version taken from package.xml, .c source has NO_VERSION_YET macro
 Version:	1.0.0
 Release:	1
 License:	PHP 3.01
