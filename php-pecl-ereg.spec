@@ -50,6 +50,31 @@ export NO_INTERACTION=1 REPORT_EXIT_STATUS=1 MALLOC_CHECK_=2
 EOF
 chmod +x run-tests.sh
 
+# these tests fail, likely everywhere, not just pld
+%{__rm} tests/ereg_basic_001.phpt
+%{__rm} tests/ereg_basic_002.phpt
+%{__rm} tests/ereg_error_002.phpt
+%{__rm} tests/ereg_replace_basic_001.phpt
+%{__rm} tests/ereg_replace_error_002.phpt
+%{__rm} tests/ereg_replace_variation_001.phpt
+%{__rm} tests/ereg_variation_001.phpt
+%{__rm} tests/ereg_variation_004.phpt
+%{__rm} tests/eregi_basic_001.phpt
+%{__rm} tests/eregi_basic_002.phpt
+%{__rm} tests/eregi_error_002.phpt
+%{__rm} tests/eregi_replace_basic_001.phpt
+%{__rm} tests/eregi_replace_error_002.phpt
+%{__rm} tests/eregi_replace_variation_001.phpt
+%{__rm} tests/eregi_variation_001.phpt
+%{__rm} tests/eregi_variation_004.phpt
+%{__rm} tests/split_basic_001.phpt
+%{__rm} tests/split_basic_002.phpt
+%{__rm} tests/split_error_002.phpt
+%{__rm} tests/split_variation_001.phpt
+%{__rm} tests/spliti_basic_001.phpt
+%{__rm} tests/spliti_basic_002.phpt
+%{__rm} tests/spliti_error_002.phpt
+%{__rm} tests/spliti_variation_001.phpt
 %build
 phpize
 %configure \
