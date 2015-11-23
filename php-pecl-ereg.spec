@@ -9,7 +9,7 @@ Summary(pl.UTF-8):	%{modname} -
 Name:		%{php_name}-pecl-%{modname}
 # version taken from package.xml, .c source has NO_VERSION_YET macro
 Version:	1.0.0
-Release:	1
+Release:	2
 License:	PHP 3.01
 Group:		Development/Languages/PHP
 Source0:	http://git.php.net/?p=pecl/text/ereg.git;a=snapshot;h=ee45d78c6bec127c60c687b4dd6dd62d369d172a;sf=tgz;/php-pecl-%{modname}-%{version}.tar.gz
